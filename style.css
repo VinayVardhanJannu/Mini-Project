@@ -1,1 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff3d6;
+    color: #4b2412;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, #9e1b1b, #d97706);
+    color: white;
+    border-bottom: 8px solid #f4c430;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header span {
+    display: block;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+
+/* Main Menu */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* Menu Sections */
+
+.menu-section {
+    background: #fffdf5;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid #d97706;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.menu-section h2 {
+    text-align: center;
+    color: #9e1b1b;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #d97706;
+}
+
+
+/* Individual Food Items */
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 10px;
+    border-bottom: 1px dotted #b5651d;
+    gap: 20px;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item h3 {
+    color: #006b3c;
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+
+.menu-item p {
+    color: #6b4226;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.menu-item strong {
+    color: #9e1b1b;
+    background: #ffe08a;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+
+/* Hover Effect */
+
+.menu-item:hover {
+    background: #fff4c2;
+    border-radius: 10px;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+.menu-item:hover h3 {
+    color: #d35400;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #006b3c;
+    color: white;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: #ffd54f;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 6px;
+    font-size: 16px;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .menu-section {
+        padding: 15px;
+    }
+
+    .menu-section h2 {
+        font-size: 23px;
+    }
+
+    .menu-item {
+        align-items: flex-start;
+    }
+
+    .menu-item h3 {
+        font-size: 18px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+
+    .menu-item strong {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+}
